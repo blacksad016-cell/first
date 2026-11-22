@@ -1,0 +1,22 @@
+name: ai_angka
+description: Aplikasi sederhana menjalankan AI MNIST.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Library untuk menjalankan model .tflite
+  tflite_flutter: ^0.10.4
+  # Library untuk mengolah gambar (tanpa UI kamera)
+  image: ^4.1.3
+
+flutter:
+  uses-material-design: true
+
+  # Mendaftarkan file otak AI kita
+  assets:
+    - assets/model_mnist.tflite
