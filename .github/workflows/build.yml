@@ -33,7 +33,6 @@ jobs:
     - name: Copy Custom Files
       run: |
         cp main.dart lib/main.dart
-        cp pubspec.yaml pubspec.yaml
         mkdir -p assets
         cp model_mnist.tflite assets/model_mnist.tflite
 
